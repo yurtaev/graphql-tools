@@ -16,23 +16,23 @@
 <link rel="stylesheet" href="/styles.ec7277b1.css">
 
 
-<link rel="preload" href="/styles.98bc17d4.js" as="script">
+<link rel="preload" href="/styles.d38ca8aa.js" as="script">
 
-<link rel="preload" href="/runtime~main.9710d0d5.js" as="script">
+<link rel="preload" href="/runtime~main.b75a485e.js" as="script">
 
-<link rel="preload" href="/main.096ab43e.js" as="script">
+<link rel="preload" href="/main.3e159b72.js" as="script">
 
-<link rel="preload" href="/1.c3b2e347.js" as="script">
+<link rel="preload" href="/1.36f8e21e.js" as="script">
 
-<link rel="preload" href="/2.6fc52962.js" as="script">
+<link rel="preload" href="/2.87868b36.js" as="script">
 
-<link rel="preload" href="/31.30949c77.js" as="script">
+<link rel="preload" href="/31.a3cd14b6.js" as="script">
 
-<link rel="preload" href="/20ac7829.3e1b1829.js" as="script">
+<link rel="preload" href="/20ac7829.4b1dbeea.js" as="script">
 
-<link rel="preload" href="/17896441.82691292.js" as="script">
+<link rel="preload" href="/17896441.63346332.js" as="script">
 
-<link rel="preload" href="/f7bbcaf6.4595bf50.js" as="script">
+<link rel="preload" href="/f7bbcaf6.6c03ebf1.js" as="script">
 
 </head>
 <body>
@@ -47,23 +47,23 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">addResolversToSchema</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> schema</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> resolvers </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></div></div></div></div><p>The <code>IAddResolveFunctionsToSchemaOptions</code> object has 4 properties that are described in <a href="/docs/generate-schema/#makeexecutableschemaoptions"><code>makeExecutableSchema</code></a>.</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-ts codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">export</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">interface</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">IAddResolveFunctionsToSchemaOptions</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  schema</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token maybe-class-name">GraphQLSchema</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  resolvers</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token maybe-class-name">IResolvers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  resolverValidationOptions</span><span class="token operator" style="color:rgb(137, 221, 255)">?</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token maybe-class-name">IResolverValidationOptions</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  inheritResolversFromInterfaces</span><span class="token operator" style="color:rgb(137, 221, 255)">?</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token builtin" style="color:rgb(130, 170, 255)">boolean</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></div></div></div></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="addschemalevelresolverschema-rootresolvefunction"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#addschemalevelresolverschema-rootresolvefunction" title="Direct link to heading">#</a>addSchemaLevelResolver(schema, rootResolveFunction)</h3><p>Some operations, such as authentication, need to be done only once per query. Logically, these operations belong in a schema level resolver field resolver, but unfortunately GraphQL-JS does not let you define one. <code>addSchemaLevelResolver</code> solves this by modifying the GraphQLSchema that is passed as the first argument.</p><blockquote><p>You can check <a href="/docs/resolvers-composition">Resolvers Composition</a> to compose resolvers with an authentication layer, and some checking operations etc.</p></blockquote></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/ardatan/graphql-tools/edit/master/website/docs/resolvers.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/generate-schema"><div class="pagination-nav__link--sublabel">Previous</div><div class="pagination-nav__link--label">« Generating a schema</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/resolvers-composition"><div class="pagination-nav__link--sublabel">Next</div><div class="pagination-nav__link--label">Resolvers composition »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#resolver-map" class="contents__link">Resolver map</a></li><li><a href="#resolver-function-signature" class="contents__link">Resolver function signature</a><ul><li><a href="#resolver-result-format" class="contents__link">Resolver result format</a></li><li><a href="#resolver-obj-argument" class="contents__link">Resolver obj argument</a></li><li><a href="#default-resolver" class="contents__link">Default resolver</a></li><li><a href="#class-method-resolvers" class="contents__link">Class method resolvers</a></li></ul></li><li><a href="#unions-and-interfaces" class="contents__link">Unions and interfaces</a></li><li><a href="#api" class="contents__link">API</a><ul><li><a href="#addresolverstoschema-schema-resolvers-resolvervalidationoptions-inheritresolversfrominterfaces-" class="contents__link">addResolversToSchema({ schema, resolvers, resolverValidationOptions?, inheritResolversFromInterfaces? })</a></li><li><a href="#addschemalevelresolverschema-rootresolvefunction" class="contents__link">addSchemaLevelResolver(schema, rootResolveFunction)</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="http://bit.ly/guild-chat">Discord</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/graphql-mesh">Stack Overflow</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/Urigo/graphql-mesh/">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/TheGuildDev">Twitter</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 The Guild, Inc. Built with Docusaurus.</div></div></div></footer>
 </div>
 
-<script src="/styles.98bc17d4.js"></script>
+<script src="/styles.d38ca8aa.js"></script>
 
-<script src="/runtime~main.9710d0d5.js"></script>
+<script src="/runtime~main.b75a485e.js"></script>
 
-<script src="/main.096ab43e.js"></script>
+<script src="/main.3e159b72.js"></script>
 
-<script src="/1.c3b2e347.js"></script>
+<script src="/1.36f8e21e.js"></script>
 
-<script src="/2.6fc52962.js"></script>
+<script src="/2.87868b36.js"></script>
 
-<script src="/31.30949c77.js"></script>
+<script src="/31.a3cd14b6.js"></script>
 
-<script src="/20ac7829.3e1b1829.js"></script>
+<script src="/20ac7829.4b1dbeea.js"></script>
 
-<script src="/17896441.82691292.js"></script>
+<script src="/17896441.63346332.js"></script>
 
-<script src="/f7bbcaf6.4595bf50.js"></script>
+<script src="/f7bbcaf6.6c03ebf1.js"></script>
 
 
 </body>
