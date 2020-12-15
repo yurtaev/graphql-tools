@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://graphql-tools.com/blog</id>
+    <title>GraphQL Tools Blog</title>
+    <updated>2015-10-25T23:29:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://graphql-tools.com/blog"/>
+    <subtitle>GraphQL Tools Blog</subtitle>
+    <icon>https://graphql-tools.com/img/favicon.ico</icon>
+</feed>
