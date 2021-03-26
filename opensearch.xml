@@ -7,5 +7,5 @@
   <Image width="16" height="16" type="image/x-icon">https://graphql-tools.com/img/favicon.ico</Image>
   <Url type="text/html" method="get" template="https://graphql-tools.com/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://graphql-tools.com/opensearch.xml" />
-  <moz:SearchForm>https://graphql-tools.com</moz:SearchForm>
+  <moz:SearchForm>https://graphql-tools.com/</moz:SearchForm>
 </OpenSearchDescription>
