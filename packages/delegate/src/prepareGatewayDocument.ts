@@ -20,8 +20,8 @@ import {
 
 import { implementsAbstractType, getRootTypeNames } from '@graphql-tools/utils';
 
-import { memoize2 } from './memoize';
 import { getDocumentMetadata } from './getDocumentMetadata';
+import { memoize2 } from './memoize';
 
 export function prepareGatewayDocument(
   originalDocument: DocumentNode,

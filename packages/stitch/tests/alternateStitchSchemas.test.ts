@@ -881,7 +881,7 @@ type Query {
 });
 
 describe('rename nested object fields with interfaces', () => {
-  test('should work', () => {
+  test('should work', async () => {
     const originalNode = {
       aList: [
         {
@@ -982,8 +982,8 @@ describe('rename nested object fields with interfaces', () => {
       }
     `;
 
-    const originalResult = graphqlSync(originalSchema, originalQuery);
-    const transformedResult = graphqlSync(transformedSchema, transformedQuery);
+    const originalResult = await graphql(originalSchema, originalQuery);
+    const transformedResult = await graphql(transformedSchema, transformedQuery);
 
     expect(originalResult).toEqual({ data: { node: originalNode } });
     expect(transformedResult).toEqual({
@@ -2027,7 +2027,6 @@ describe('basic type merging', () => {
               selectionSet,
               context,
               info,
-              skipTypeMerging: true,
             }),
         },
       },
@@ -2047,7 +2046,6 @@ describe('basic type merging', () => {
               selectionSet,
               context,
               info,
-              skipTypeMerging: true,
             }),
         },
       },
@@ -2171,7 +2169,6 @@ describe('unidirectional type merging', () => {
               selectionSet,
               context,
               info,
-              skipTypeMerging: true,
             }),
         },
       },
